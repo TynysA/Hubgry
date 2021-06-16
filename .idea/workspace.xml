@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11c2755-1c57-4063-bd9d-bfbf48e992f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/check.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/banny-cufonfonts-webfont/Banny-BoldRound.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/banny-cufonfonts-webfont/Banny-LightRound.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/banny-cufonfonts-webfont/Banny-Round.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/banny-cufonfonts-webfont/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/banny-cufonfonts-webfont/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/1__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/2__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/3__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Galereia/4__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image__big/1__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image__big/2__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image__big/3__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image__big/4__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image__big/5__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/image__big/6__big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/Vector.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/header-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check.php" beforeDir="false" afterPath="$PROJECT_DIR$/check.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623779585461</updated>
       <workItem from="1623779586586" duration="1538000" />
-      <workItem from="1623781191865" duration="796000" />
+      <workItem from="1623781191865" duration="1633000" />
     </task>
     <servers />
   </component>
