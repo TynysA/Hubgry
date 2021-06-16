@@ -148,12 +148,12 @@
                     <div class="booking section--right">
                         <div class="section__title">book a table</div>
                         <form class="booking__form" action="check.php" method="post">
-                            <input type="text" class="booking__send" name="" required placeholder="Name">
-                            <input type="email" class="booking__send" name="" placeholder="Email">
-                            <input type="tel" class="booking__send" name="" required placeholder="Phone">
+                            <input type="text" class="booking__send" name="name" required placeholder="Name">
+                            <input type="email" class="booking__send" name="email" placeholder="Email">
+                            <input type="tel" class="booking__send" name="phone" required placeholder="Phone">
 
                             <div class="select-wrapper">
-                                <select>
+                                <select name="count">
                                     <option value="1">People</option>
                                     <option value="2">1-3</option>
                                     <option value="3">4-6</option>
@@ -162,11 +162,10 @@
                                 </select>
                                 <div class="select-arrow"></div>
                             </div>
-                            <input type="text" class="booking__send" name="" min="1" max="5" required
-                                placeholder="Date(mm/dd)">
+                            <input type="text" class="booking__send" name="date" min="1" max="5" required placeholder="Date(mm/dd)">
 
                             <div class="select-wrapper">
-                                <select>
+                                <select name="time">
                                     <option value="1">Time</option>
                                     <option value="2">8:00-8:30</option>
                                     <option value="3">8:30:9:00</option>
@@ -1604,10 +1603,10 @@
                         velit maximus, molestie est a, tempor magna.</div>
                 </div>
                 <form action="check.php" method="post" class="contact__form">
-                    <input type="text" class="contact__send" name="name" required placeholder="Name">
-                    <input type="email" class="contact__send" name="email" placeholder="Email">
-                    <input type="tel" class="contact__send" name="phone" required placeholder="Phone">
-                    <textarea name="message" id="#message" name="text"  class="contact__text" placeholder="Message"></textarea>
+                    <input type="text" class="contact__send" name="name_c" required placeholder="Name">
+                    <input type="email" class="contact__send" name="email_c" placeholder="Email">
+                    <input type="tel" class="contact__send" name="phone_c" required placeholder="Phone">
+                    <textarea name="message" id="#message" name="text" class="contact__text" placeholder="Message"></textarea>
                     <div class="contact__footer">
                         <button class="contact__btn button" type="submit">BOOK NOW</button>
                         <div class="contact__info">
@@ -1633,9 +1632,7 @@
 
 
         <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5348.425651150102!2d71.42391095866368!3d51.13074784387622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841e0caadcf7%3A0x4f6ce0ff87111d39!2sBaiterek%20Tower!5e0!3m2!1sen!2skz!4v1622539471165!5m2!1sen!2skz"
-                height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5348.425651150102!2d71.42391095866368!3d51.13074784387622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841e0caadcf7%3A0x4f6ce0ff87111d39!2sBaiterek%20Tower!5e0!3m2!1sen!2skz!4v1622539471165!5m2!1sen!2skz" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div class="footer__text" id="end">

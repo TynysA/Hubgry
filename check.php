@@ -1,20 +1,21 @@
 <?php
-$name = $_POST["login"];
-$password = $_POST["password"];
-$gender = $_POST["gender"];
-$massage = "Gender of writer:" . $gender . "\nAnd Password:" . $password;
-if (trim($name) == "") {
-    echo "You do not write your name";
-} else if (strlen(trim($name)) <= 1) {
-    echo "This name is not correct";
-} else if (trim($password) == "" || trim($gender) == "") {
-    echo "Write all info";
-} else {
-    $subject = 'New message for you';
-    // Reply:$name\r\nContent-type:text/html;charset=utf-8\r\n
-    $headers = " Form:$name\r\n";
-    $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    mail("j.ady.tynys@gmail.com", $subject, $massage, $headers);
-    header('Location: ../index.php');
-    exit;
-}
+$name = $_POST["name"];
+$email = $_POST["email"];
+$phone = $_POST["phone"];
+//From contact block
+$c_name = $_POST["name_c"];
+$c_email = $_POST["email_c"];
+$c_phone = $_POST["phone_c"];
+$c_text = $_POST["text"];
+
+$massage="Name:" . "$c_name | $name \n". "Phone:"
+    . "$c_phone | $phone \n" ."Email:" . "$c_email | $email \n"
+    . "Text: " .$c_text;
+
+$subject = "=?utf-8?B?" .base64_encode("Test massage") ."?=";
+$headers = " Form: $name\r\nContent-type: text/html; charset=utf-8\r\n";
+$to="j.ady.tynys@gmail.com";
+mail($to, $subject, $massage, $headers);
+header('Location: ../index.php');
+exit;
+
