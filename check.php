@@ -1,24 +1,42 @@
 <?php
-//booking
-$name = $_POST["name"];
-$email = $_POST["email"];
-$phone = $_POST["phone"];
-$time=$_POST["time"];
-$count=$_POST["count"];
-//From contact block
-$c_name = $_POST["name_c"];
-$c_email = $_POST["email_c"];
-$c_phone = $_POST["phone_c"];
-$c_text = $_POST["text"];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$massage="Name:" . "$c_name | $name \n". "Phone:"
-    . "$c_phone | $phone \n" ."Email:" . "$c_email | $email \n"
-    . "Text: " .$c_text;
-$massage .="\nTime: $time\n" ."Count of People: $count";
-$subject = "=?utf-8?B?" .base64_encode("Test massage") ."?=";
-$headers = " Form: $name\r\nContent-type: text/html; charset=utf-8\r\n";
-$to="j.ady.tynys@gmail.com";
-mail($to, $subject, $massage, $headers);
-header('Location: ../index.php');
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+$mail = new PHPMailer(true);
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+//$mail->SMTPDebug = 1;
+echo $good;//
+$mail->CharSet='UTF-8';
+$mail->isHTML(true);
+$mail->SMTPSecure = 'ssl';
+
+$mail->Host="smtp.mail.ru";
+$mail->Username = 'tekseru.zhiber@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'm^rirrOINU33';//91v97haF332YzbzgVje1 //m^rirrOINU33
+$mail->setFrom('tekseru.zhiber@mail.ru'); // От кого будет уходить письмо?
+$mail->addAddress('tynys.aday@mail.ru');//Кому будет уходить письмо
+
+
+$mail->Port = 465;
+
+foreach ($_POST as $key=>$value){
+    if (!$value==''){
+        $massage .="$key:"."$value \n";
+    }
+    else
+        continue;
+}
+$mail->Subject = 'Заявка из сайта';
+$mail->Body=$massage;
+if($mail->send()){
+    header('location:../index.php');
+}
+else
+    echo "Error";
 exit;
 
